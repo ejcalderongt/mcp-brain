@@ -1,0 +1,9 @@
+# Local secrets
+mcp-db-brain/config/db.local.json
+
+# Generated outputs
+mcp-db-brain/output/*.json
+mcp-db-brain/output/*.md
+mcp-db-brain/output/*.csv
+
+config/db.local.json
