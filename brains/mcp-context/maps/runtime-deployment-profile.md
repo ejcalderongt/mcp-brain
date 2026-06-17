@@ -65,3 +65,8 @@ This environment is a good candidate for controlled deploy via:
 - Publish user used in the seed profile: `EC2AMAZ-ULD1A11\Administrator`
 - Local artifact: `C:\Users\yejc2\Downloads\webdeploy_mposbi_ec2_ejc.PublishSettings`
 - Security note: do not commit the `.PublishSettings` file; keep it local because it may contain deployment secrets or be re-generated per environment.
+
+## Web Deploy Usage Pattern
+- `Sync`: incremental publish from staging to IIS.
+- `Package`: local ZIP artifact generated from the same staging payload.
+- The package flow is a release artifact, not a Git diff, and does not require `msdeploy.exe` or server credentials.
