@@ -57,3 +57,11 @@ This environment is a good candidate for controlled deploy via:
 - smoke test before switch
 - fast rollback to previous release
 
+## Web Deploy Seed
+- Publish method prepared: `Web Deploy`
+- Publish URL: `https://EC2AMAZ-ULD1A11:8172/msdeploy.axd`
+- Remote IIS site: `mposbi`
+- Public destination app URL: `https://mposgt.com:443/`
+- Publish user used in the seed profile: `EC2AMAZ-ULD1A11\Administrator`
+- Local artifact: `C:\Users\yejc2\Downloads\webdeploy_mposbi_ec2_ejc.PublishSettings`
+- Security note: do not commit the `.PublishSettings` file; keep it local because it may contain deployment secrets or be re-generated per environment.

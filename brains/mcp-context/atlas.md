@@ -43,3 +43,4 @@
 - `maps/runtime-deployment-profile.md`
 - Production host sample: `EC2AMAZ-ULD1A11`
 - Published MCP site: `C:\inetpub\wwwroot\mposbi`
+- Web Deploy seed profile: `C:\Users\yejc2\Downloads\webdeploy_mposbi_ec2_ejc.PublishSettings`
