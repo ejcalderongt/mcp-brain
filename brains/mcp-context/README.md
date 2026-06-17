@@ -18,6 +18,11 @@ Repositorio dedicado para conservar y evolucionar:
 - Corrección de `base_url` dinámico para evitar dependencia de nombre de carpeta (`mposbi`/`MCP`).
 - Corrección de hook de autenticación para evitar loop de redirección en login.
 
+## Última actualización CRM/reportes (2026-06-16)
+- Nuevo reporte CRM `reportes/seguimiento_vendedor`.
+- SP EC2 QA `dbo.sp_crm_reporte_seguimiento_vendedor` validado en `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`.
+- Mapa operativo: `maps/crm-seguimiento-vendedor-report.md`.
+
 ## Seguridad
 - `config/db.local.json` está excluido de git por `.gitignore`.
 

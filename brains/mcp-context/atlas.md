@@ -32,3 +32,9 @@
   - `C:\Users\yejc2\StudioProjects\mpos`
 - Dedicated integration brain:
   - `subbrains/mpos/README.md`
+
+## Recent CRM Reporting Artifact
+- `maps/crm-seguimiento-vendedor-report.md`
+- Source route: `reportes/seguimiento_vendedor`
+- SQL contract: `dbo.sp_crm_reporte_seguimiento_vendedor`
+- EC2 QA: `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`

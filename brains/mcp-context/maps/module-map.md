@@ -46,6 +46,11 @@ Dominant table families:
 - Fiscal/E-invoicing: FEL integrations by country variants.
 - Integrations: Firebase, Microsoft Graph/OAuth, email channels.
 
+## CRM Reporting Update (2026-06-16)
+- New report route: `reportes/seguimiento_vendedor`.
+- Main source map: `maps/crm-seguimiento-vendedor-report.md`.
+- It bridges CRM prospect/contact activity with quotation, sales order, BOF purchase order and certified invoice activity through `dbo.sp_crm_reporte_seguimiento_vendedor`.
+
 ## MPOS Related Modules (Cross-System)
 - POS mobile sales: `D_FACTURA`, `D_FACTURAD` lineage.
 - Mobile inventory movements: `D_MOV`, `D_MOVD`, `D_MOV_ALMACEN`, `D_MOVD_ALMACEN`.

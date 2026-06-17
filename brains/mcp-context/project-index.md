@@ -21,6 +21,9 @@
 - `mcp-db-brain/scripts/*.ps1`
 - `mcp-db-brain/output/*`
 
+## CRM / Reportes
+- `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
+
 ## Sub-Brain MPOS
 - `subbrains/mpos/README.md`
 - `subbrains/mpos/AGENT.md`

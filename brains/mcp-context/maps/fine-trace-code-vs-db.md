@@ -71,6 +71,16 @@
 - `mcp-db-brain/output/model_module_counts.csv`
 - `mcp-db-brain/output/view_module_counts.csv`
 - `mcp-db-brain/output/db_prefix_counts.csv`
+- `maps/crm-seguimiento-vendedor-report.md`
+
+## CRM Report Trace: Seguimiento Vendedor (2026-06-16)
+- Route: `reportes/seguimiento_vendedor`.
+- Controller/model pair:
+  - `application/controllers/reportes/Seguimiento_vendedor.php`
+  - `application/models/reportes/Seguimiento_vendedor_model.php`
+- Database entry point: `dbo.sp_crm_reporte_seguimiento_vendedor`.
+- Primary entities: `d_prospecto`, `d_prospecto_contacto`, `d_cotizacion_enc`, `d_orden_compra_bof`, `d_venta_bof`, `p_cliente`, `vendedores`, `users`.
+- EC2 QA validation: `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`.
 
 ## MPOS Cross-System Extension (2026-06-09)
 - New dedicated sub-brain:
