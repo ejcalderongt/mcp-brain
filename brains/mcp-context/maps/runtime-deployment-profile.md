@@ -70,3 +70,8 @@ This environment is a good candidate for controlled deploy via:
 - `Sync`: incremental publish from staging to IIS.
 - `Package`: local ZIP artifact generated from the same staging payload.
 - The package flow is a release artifact, not a Git diff, and does not require `msdeploy.exe` or server credentials.
+
+## Local Run Helper
+- Local smoke helper in repo: `scripts/Run-MposbiLocal.ps1`
+- Purpose: boot the PHP built-in server if needed and execute a login + report smoke against `http://127.0.0.1:8080`
+- Result: useful to separate code defects from production-only issues before publishing.
