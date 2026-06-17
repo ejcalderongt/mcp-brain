@@ -11,6 +11,7 @@ Repositorio dedicado para conservar y evolucionar:
 - `scripts/`: utilidades de conexión/query/build brain.
 - `output/`: metadata generada de esquema (sin credenciales).
 - `README.md` y `AGENT.md`: guía operativa del agente.
+- `maps/runtime-deployment-profile.md`: perfil estable del server de producción y contexto de deploy.
 
 ## Última actualización operativa (2026-06-08)
 - Validación de runtime en PHP 8.2.

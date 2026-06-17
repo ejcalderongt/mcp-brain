@@ -38,3 +38,8 @@
 - Source route: `reportes/seguimiento_vendedor`
 - SQL contract: `dbo.sp_crm_reporte_seguimiento_vendedor`
 - EC2 QA: `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`
+
+## Runtime Deployment Profile
+- `maps/runtime-deployment-profile.md`
+- Production host sample: `EC2AMAZ-ULD1A11`
+- Published MCP site: `C:\inetpub\wwwroot\mposbi`

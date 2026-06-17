@@ -24,6 +24,9 @@
 ## CRM / Reportes
 - `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
 
+## Runtime / Deploy
+- `maps/runtime-deployment-profile.md` -> contexto estable del server de produccion, IIS, site path y base para deploy controlado.
+
 ## Sub-Brain MPOS
 - `subbrains/mpos/README.md`
 - `subbrains/mpos/AGENT.md`
