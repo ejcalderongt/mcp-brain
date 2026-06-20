@@ -16,6 +16,9 @@ Ser el agente operativo para:
 - No ejecutar `DELETE/UPDATE/INSERT` sin aprobación explícita.
 - Priorizar consultas `SELECT` y metadata (`sys.*`, `INFORMATION_SCHEMA`).
 - Mantener credenciales en `config/db.local.json` (local, fuera de git).
+- La continuidad de contexto se conserva en `memory/YYYY-MM-DD.md` y en los mapas del brain antes de cualquier push.
+- El remote operativo para este brain es `neworigin`; si aparece `origin` viejo, no asumir que sigue vigente.
+- Cuando un hallazgo afecte `mpos`/`factura_mpos`, registrar usuario, rol, empresa, SQL, commit/tag y remote antes de cerrar el turno.
 
 ## Subagentes
 - `subbrains/mpos/AGENT.md`: traza fina Android `mpos` -> MCP (WS, sync, tablas, Kardex/reportes).

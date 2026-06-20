@@ -36,6 +36,12 @@ Repositorio dedicado para conservar y evolucionar:
 ## Seguridad
 - `config/db.local.json` está excluido de git por `.gitignore`.
 
+## Regla de continuidad
+- Este brain es la fuente de verdad para los hallazgos persistentes de MCP y mPos.
+- El remote vigente para publicar este trabajo es `neworigin`; no usar el viejo `origin` de Visual Studio como upstream operativo.
+- Antes de empujar cambios importantes, registrar el resumen en `memory/YYYY-MM-DD.md` y en los mapas/AGENT del brain para no perder contexto tras una compacción.
+- Para hallazgos de `venta/factura_mpos`, conservar siempre usuario, rol, empresa, SQL aplicado, commit/tag y remote usado.
+
 ## Sub-Brains
 - `subbrains/mpos/`: brain dedicado a Android `mpos` y correlación con MCP.
 - Ruta de subagente: `subbrains/mpos/AGENT.md`.
