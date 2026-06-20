@@ -12,6 +12,8 @@ Repositorio dedicado para conservar y evolucionar:
 - `output/`: metadata generada de esquema (sin credenciales).
 - `README.md` y `AGENT.md`: guía operativa del agente.
 - `maps/runtime-deployment-profile.md`: perfil estable del server de producción y contexto de deploy.
+- `maps/factura-mpos-anulacion-flow.md`: flujo de listado, permisos y anulación centralizada de mPos.
+- `maps/role-permission-trace.md`: trazabilidad de rol, módulo y visibilidad de menú para mPos.
 
 ## Última actualización operativa (2026-06-08)
 - Validación de runtime en PHP 8.2.
@@ -23,6 +25,13 @@ Repositorio dedicado para conservar y evolucionar:
 - Nuevo reporte CRM `reportes/seguimiento_vendedor`.
 - SP EC2 QA `dbo.sp_crm_reporte_seguimiento_vendedor` validado en `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`.
 - Mapa operativo: `maps/crm-seguimiento-vendedor-report.md`.
+
+## Última actualización ventas mPos (2026-06-20)
+- Nueva pantalla `venta/factura_mpos` para listar y anular facturas mPos sin mezclar el flujo BOF actual.
+- La anulación centralizada actualiza `D_FACTURA`, `D_FACTURAD`, `D_FACTURAP` y, si existe, `D_FACTURA_MPOS_ANULACION`.
+- La visibilidad del menú depende de la cadena `p_modulos_rol -> p_menuopcion_rol`; para empresa 80 se habilitó el módulo `14` (`Inventario`) para el rol `15` y con eso aparece `Facturas mPos`.
+- El admin operativo validado para empresa 80 fue `adminimno` (`USERID = 297`, `RoleId = 15`).
+- Mapa operativo: `maps/factura-mpos-anulacion-flow.md`.
 
 ## Seguridad
 - `config/db.local.json` está excluido de git por `.gitignore`.

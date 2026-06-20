@@ -24,6 +24,10 @@
 ## CRM / Reportes
 - `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
 
+## Ventas mPos
+- `maps/factura-mpos-anulacion-flow.md` -> listado, anulacion centralizada, sincronizacion y envio FEL.
+- `maps/role-permission-trace.md` -> trazabilidad de rol, modulo y visibilidad del menu `venta/factura_mpos`.
+
 ## Runtime / Deploy
 - `maps/runtime-deployment-profile.md` -> contexto estable del server de produccion, IIS, site path y base para deploy controlado.
 

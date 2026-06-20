@@ -44,3 +44,9 @@
 - Production host sample: `EC2AMAZ-ULD1A11`
 - Published MCP site: `C:\inetpub\wwwroot\mposbi`
 - Web Deploy seed profile: `C:\Users\yejc2\Downloads\webdeploy_mposbi_ec2_ejc.PublishSettings`
+
+## Ventas mPos Update
+- `maps/factura-mpos-anulacion-flow.md`
+- `maps/role-permission-trace.md`
+- Route: `venta/factura_mpos`
+- Permission: `verPermisoModulo("venta", 3)`
