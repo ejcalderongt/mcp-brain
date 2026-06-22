@@ -12,6 +12,7 @@ Repositorio dedicado para conservar y evolucionar:
 - `output/`: metadata generada de esquema (sin credenciales).
 - `README.md` y `AGENT.md`: guía operativa del agente.
 - `maps/runtime-deployment-profile.md`: perfil estable del server de producción y contexto de deploy.
+- `maps/inventory-adjustment-variant-flow.md`: flujo de ajuste talla/color con dry-run reversible.
 - `maps/factura-mpos-anulacion-flow.md`: flujo de listado, permisos y anulación centralizada de mPos.
 - `maps/role-permission-trace.md`: trazabilidad de rol, módulo y visibilidad de menú para mPos.
 

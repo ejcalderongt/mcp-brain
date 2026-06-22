@@ -39,6 +39,12 @@
 - SQL contract: `dbo.sp_crm_reporte_seguimiento_vendedor`
 - EC2 QA: `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`
 
+## Inventory Adjustment Variant
+- `maps/inventory-adjustment-variant-flow.md`
+- Route: `inventario/ajuste_talla_color`
+- Feature flag: `p_paramext.id = 1001`
+- Legacy escape hatch: `inventario/ajuste?legacy=1`
+
 ## Runtime Deployment Profile
 - `maps/runtime-deployment-profile.md`
 - Production host sample: `EC2AMAZ-ULD1A11`

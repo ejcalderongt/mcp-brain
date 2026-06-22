@@ -24,6 +24,9 @@
 ## CRM / Reportes
 - `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
 
+## Inventario Variante
+- `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color con dry-run reversible, fallback legacy y persistencia por `P_stock_model::set_producto(...)`.
+
 ## Ventas mPos
 - `maps/factura-mpos-anulacion-flow.md` -> listado, anulacion centralizada, sincronizacion y envio FEL.
 - `maps/role-permission-trace.md` -> trazabilidad de rol, modulo y visibilidad del menu `venta/factura_mpos`.
