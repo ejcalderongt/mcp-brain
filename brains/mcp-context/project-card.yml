@@ -1,0 +1,69 @@
+schema_version: 1
+card_type: project-card
+
+project:
+  id: mcp
+  name: MCP
+  primary_brain: mcp-brain
+  status: active
+  owner: ejcalderongt
+  stack:
+    language: PHP
+    framework: CodeIgniter 3
+    database: SQL Server
+
+source_of_truth:
+  code_repo:
+    path: C:\Users\yejc2\source\repos\MCP\mposbi
+    remote: origin
+    branch: main
+  brain_repo:
+    path: C:\Users\yejc2\source\repos\MCP\mcp-brain
+    remote: origin
+    branch: main
+
+companion_sources:
+  mpos_android:
+    path: C:\Users\yejc2\StudioProjects\mPos2026
+    role: upstream sync source for POS mobile behavior
+  printagent:
+    path: C:\Users\yejc2\source\repos\PrintAgent
+    role: client-side print driver and label bridge
+
+startup:
+  read_first:
+    - README.md
+    - brains/mcp-context/README.md
+    - brains/mcp-context/AGENT.md
+    - brains/mcp-context/project-index.md
+  playbooks:
+    - brains/mcp-context/maps/project-navigation-playbook.md
+    - brains/mcp-context/maps/variant-aware-report-contract.md
+    - brains/mcp-context/maps/printagent-driver-trace.md
+  handoff_template: brains/mcp-context/templates/handoff-template.md
+
+contracts:
+  required_handoff_fields:
+    - repo
+    - branch
+    - route
+    - owning_files
+    - tables_or_views
+    - flags_roles_filters
+    - validation_path
+    - risks
+  canonical_variant_key: codigo_producto + unidad_medida
+  canonical_variant_labels:
+    - talla
+    - color
+
+federation:
+  index: C:\Users\yejc2\OpenClawWorkspace\brain\federated-index.yml
+  route: mcp
+
+tags:
+  - mcp
+  - federated-brain
+  - handoff
+  - variant-aware
+  - printagent

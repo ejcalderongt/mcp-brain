@@ -10,11 +10,13 @@ cd C:\Users\%USERNAME%\source\repos\MCP\mcp-brain
 
 ## Estructura
 - `brains/mcp-context/` contexto persistente del sistema MCP
+- `brains/mcp-context/project-card.yml` descriptor único del proyecto y de la federación
 - `brains/mcp-context/maps/project-navigation-playbook.md` ruta rápida para ubicar repo, módulo, tablas y validación
 - `brains/mcp-context/maps/variant-aware-report-contract.md` contrato reusable para reportes con talla/color o variantes
 - `analysis/kardex/` trazas y análisis del reporte kardex
 - `scripts/` herramientas de validación/diagnóstico
 - `runbooks/` guías operativas y recuperación
+- `brains/mcp-context/templates/handoff-template.md` plantilla estándar para transferir contexto entre agentes
 
 ## Regla operativa
 Todo artefacto generado por agentes (trazas, análisis, evidencia, scripts de diagnóstico, brains y yaml) se versiona aquí, no en el repo de código fuente.

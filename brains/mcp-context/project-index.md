@@ -24,6 +24,10 @@
 ## CRM / Reportes
 - `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
 
+## Project Card / Handoff
+- `project-card.yml` -> descriptor único del proyecto MCP, brain primario, fuentes de verdad y playbooks auto-load.
+- `templates/handoff-template.md` -> plantilla estándar para transferir un caso a otro agente.
+
 ## Inventario Variante
 - `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color, bandera `1001`, dry-run reversible y stock tree Firebase/SQL.
 

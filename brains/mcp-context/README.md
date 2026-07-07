@@ -11,9 +11,11 @@ Repositorio dedicado para conservar y evolucionar:
 - `scripts/`: utilidades de conexión/query/build brain.
 - `output/`: metadata generada de esquema (sin credenciales).
 - `README.md` y `AGENT.md`: guía operativa del agente.
+- `project-card.yml`: descriptor único del proyecto MCP y de sus fuentes de verdad.
 - `maps/project-navigation-playbook.md`: primer punto de entrada para ubicar repo, módulo, tablas y validación.
 - `maps/variant-aware-report-contract.md`: contrato reusable para reportes con talla/color o variantes.
 - `maps/printagent-driver-trace.md`: traza del driver local de impresión cliente-side.
+- `templates/handoff-template.md`: plantilla estándar para transferir contexto a otro agente.
 
 ## Última actualización operativa (2026-06-08)
 - Validación de runtime en PHP 8.2.

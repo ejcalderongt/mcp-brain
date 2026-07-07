@@ -23,6 +23,7 @@ Ser el agente operativo para:
 ## Handoff reusable
 - Usa `maps/project-navigation-playbook.md` antes de buscar código para ubicar repo, módulo y flujo.
 - Usa `maps/variant-aware-report-contract.md` cuando un reporte necesite talla/color o lógica de variantes.
+- Usa `project-card.yml` como descriptor de arranque del proyecto y `templates/handoff-template.md` para transferir el caso a otro agente sin perder campos críticos.
 
 ## Subagentes
 - `subbrains/mpos/AGENT.md`: traza fina Android `mpos` -> MCP (WS, sync, tablas, Kardex/reportes).
