@@ -18,3 +18,8 @@ cd C:\Users\%USERNAME%\source\repos\MCP\mcp-brain
 
 ## Regla operativa
 Todo artefacto generado por agentes (trazas, análisis, evidencia, scripts de diagnóstico, brains y yaml) se versiona aquí, no en el repo de código fuente.
+
+## Federación
+- `mcp-brain` es el brain primario y la fuente de verdad federada para MCP.
+- Los brains paralelos o de contexto se tratan como overlays/handoff hasta que su contenido quede consolidado aquí.
+- El remote operativo actual de este brain es `origin` (`git@github.com:ejcalderongt/mcp-brain.git`).

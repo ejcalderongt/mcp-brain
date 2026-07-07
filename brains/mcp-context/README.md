@@ -13,6 +13,7 @@ Repositorio dedicado para conservar y evolucionar:
 - `README.md` y `AGENT.md`: guía operativa del agente.
 - `maps/project-navigation-playbook.md`: primer punto de entrada para ubicar repo, módulo, tablas y validación.
 - `maps/variant-aware-report-contract.md`: contrato reusable para reportes con talla/color o variantes.
+- `maps/printagent-driver-trace.md`: traza del driver local de impresión cliente-side.
 
 ## Última actualización operativa (2026-06-08)
 - Validación de runtime en PHP 8.2.
@@ -39,6 +40,12 @@ Repositorio dedicado para conservar y evolucionar:
 
 ## Seguridad
 - `config/db.local.json` está excluido de git por `.gitignore`.
+
+## Regla de continuidad
+- Este brain es la fuente de verdad para los hallazgos persistentes de MCP y mPos.
+- El remote vigente para publicar este trabajo es `origin`; si aparece un alias viejo o una réplica paralela, no asumir que sigue vigente.
+- Antes de empujar cambios importantes, registrar el resumen en `memory/YYYY-MM-DD.md` y en los mapas/AGENT del brain para no perder contexto tras una compacción.
+- Para hallazgos de `venta/factura_mpos`, conservar siempre usuario, rol, empresa, SQL aplicado, commit/tag y remote usado.
 
 ## Sub-Brains
 - `subbrains/mpos/`: brain dedicado a Android `mpos` y correlación con MCP.

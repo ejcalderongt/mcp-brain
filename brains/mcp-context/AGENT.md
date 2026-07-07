@@ -17,7 +17,7 @@ Ser el agente operativo para:
 - Priorizar consultas `SELECT` y metadata (`sys.*`, `INFORMATION_SCHEMA`).
 - Mantener credenciales en `config/db.local.json` (local, fuera de git).
 - La continuidad de contexto se conserva en `memory/YYYY-MM-DD.md` y en los mapas del brain antes de cualquier push.
-- El remote operativo para este brain es `neworigin`; si aparece `origin` viejo, no asumir que sigue vigente.
+- El remote operativo para este brain es `origin`; si aparece un alias viejo, no asumir que sigue vigente.
 - Cuando un hallazgo afecte `mpos`/`factura_mpos`, registrar usuario, rol, empresa, SQL, commit/tag y remote antes de cerrar el turno.
 
 ## Handoff reusable

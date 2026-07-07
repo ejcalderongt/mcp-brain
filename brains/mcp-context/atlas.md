@@ -29,9 +29,13 @@
 
 ## Related Source Systems
 - Android app source linked to MCP operations:
-  - `C:\Users\yejc2\StudioProjects\mpos`
+  - `C:\Users\yejc2\StudioProjects\mPos2026`
+  - `C:\Users\yejc2\StudioProjects\mpos`  # legacy alias / historical path
+- Local client-side printing driver:
+  - `C:\Users\yejc2\source\repos\PrintAgent`
 - Dedicated integration brain:
   - `subbrains/mpos/README.md`
+  - `subbrains/printagent/README.md`
 
 ## Recent CRM Reporting Artifact
 - `maps/crm-seguimiento-vendedor-report.md`
@@ -39,20 +43,25 @@
 - SQL contract: `dbo.sp_crm_reporte_seguimiento_vendedor`
 - EC2 QA: `EC2AMAZ-ULD1A11 / mpos_pollo_express_qa`
 
-## Inventory Adjustment Variant
+## Recent Inventory Variant Artifact
 - `maps/inventory-adjustment-variant-flow.md`
-- Route: `inventario/ajuste_talla_color`
+- Source route: `inventario/ajuste_talla_color`
 - Feature flag: `p_paramext.id = 1001`
-- Legacy escape hatch: `inventario/ajuste?legacy=1`
+- Stock tree note: Firebase `Stock/{sucursal}` when `p_sucursal.usa_firebase = 1`
 
-## Runtime Deployment Profile
+## Recent Sales Artifact
+- `maps/factura-mpos-anulacion-flow.md`
+- Source route: `venta/factura_mpos`
+- Permission gate: `verPermisoModulo("venta", 3)`
+- Optional sync table: `D_FACTURA_MPOS_ANULACION`
+
+## Runtime / Deploy Artifact
 - `maps/runtime-deployment-profile.md`
 - Production host sample: `EC2AMAZ-ULD1A11`
 - Published MCP site: `C:\inetpub\wwwroot\mposbi`
 - Web Deploy seed profile: `C:\Users\yejc2\Downloads\webdeploy_mposbi_ec2_ejc.PublishSettings`
 
-## Ventas mPos Update
-- `maps/factura-mpos-anulacion-flow.md`
+## Permission / Role Artifact
 - `maps/role-permission-trace.md`
 - Route: `venta/factura_mpos`
-- Permission: `verPermisoModulo("venta", 3)`
+- Gate: `verPermisoModulo("venta", 3)`

@@ -25,14 +25,19 @@
 - `maps/crm-seguimiento-vendedor-report.md` -> reporte CRM agrupado por vendedor, SP EC2, menu/permisos y validacion QA.
 
 ## Inventario Variante
-- `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color con dry-run reversible, fallback legacy y persistencia por `P_stock_model::set_producto(...)`.
+- `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color, bandera `1001`, dry-run reversible y stock tree Firebase/SQL.
 
 ## Ventas mPos
-- `maps/factura-mpos-anulacion-flow.md` -> listado, anulacion centralizada, sincronizacion y envio FEL.
-- `maps/role-permission-trace.md` -> trazabilidad de rol, modulo y visibilidad del menu `venta/factura_mpos`.
+- `maps/factura-mpos-anulacion-flow.md` -> listado y anulacion centralizada de facturas mPos, con sync opcional por bitacora.
+- `maps/role-permission-trace.md` -> trazabilidad de rol, módulo y visibilidad del menú `venta/factura_mpos`.
 
 ## Runtime / Deploy
 - `maps/runtime-deployment-profile.md` -> contexto estable del server de produccion, IIS, site path y base para deploy controlado.
+
+## PrintAgent
+- `maps/printagent-driver-trace.md` -> driver local de impresión cliente-side, flujo ticket/invoice y futura capa de etiquetas.
+- `subbrains/printagent/README.md`
+- `subbrains/printagent/AGENT.md`
 
 ## Sub-Brain MPOS
 - `subbrains/mpos/README.md`
@@ -43,3 +48,5 @@
 - `subbrains/mpos/maps/sync-orchestration-map.md`
 - `subbrains/mpos/maps/functional-inventory.md`
 - `subbrains/mpos/maps/kardex-sales-impact.md`
+- Android source root: `C:\Users\yejc2\StudioProjects\mPos2026`
+- Legacy Android alias: `C:\Users\yejc2\StudioProjects\mpos`

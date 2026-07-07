@@ -25,4 +25,4 @@ Keep `mcp-db-brain` continuously useful for impact analysis and change safety.
 - Commit only maps and generated non-sensitive metadata.
 - Tag each refresh with date/time and DB name in `output/summary.md`.
 - For session-derived fixes, mirror the final state in `memory/YYYY-MM-DD.md` and the relevant brain map before pushing.
-- Treat `neworigin` as the active publishing remote for this brain unless explicitly reconfigured.
+- Treat `origin` as the active publishing remote for this brain unless explicitly reconfigured.
