@@ -10,6 +10,8 @@ cd C:\Users\%USERNAME%\source\repos\MCP\mcp-brain
 
 ## Estructura
 - `brains/mcp-context/` contexto persistente del sistema MCP
+- `brains/mcp-context/maps/project-navigation-playbook.md` ruta rápida para ubicar repo, módulo, tablas y validación
+- `brains/mcp-context/maps/variant-aware-report-contract.md` contrato reusable para reportes con talla/color o variantes
 - `analysis/kardex/` trazas y análisis del reporte kardex
 - `scripts/` herramientas de validación/diagnóstico
 - `runbooks/` guías operativas y recuperación

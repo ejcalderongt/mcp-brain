@@ -20,5 +20,10 @@ Ser el agente operativo para:
 - El remote operativo para este brain es `neworigin`; si aparece `origin` viejo, no asumir que sigue vigente.
 - Cuando un hallazgo afecte `mpos`/`factura_mpos`, registrar usuario, rol, empresa, SQL, commit/tag y remote antes de cerrar el turno.
 
+## Handoff reusable
+- Usa `maps/project-navigation-playbook.md` antes de buscar código para ubicar repo, módulo y flujo.
+- Usa `maps/variant-aware-report-contract.md` cuando un reporte necesite talla/color o lógica de variantes.
+
 ## Subagentes
 - `subbrains/mpos/AGENT.md`: traza fina Android `mpos` -> MCP (WS, sync, tablas, Kardex/reportes).
+- `subbrains/printagent/AGENT.md`: traza fina del driver local de impresión (facturas, tickets y futura capa de etiquetas).
