@@ -52,5 +52,6 @@
 - `subbrains/mpos/maps/sync-orchestration-map.md`
 - `subbrains/mpos/maps/functional-inventory.md`
 - `subbrains/mpos/maps/kardex-sales-impact.md`
+- `C:\Users\yejc2\source\repos\MCP\mposbi\scripts\Validate-DetalleExistenciasVsKardex.ps1` -> comparador reproducible para detalle_existencias vs Kardex en muestras de 2-5 codigos.
 - Android source root: `C:\Users\yejc2\StudioProjects\mPos2026`
 - Legacy Android alias: `C:\Users\yejc2\StudioProjects\mpos`

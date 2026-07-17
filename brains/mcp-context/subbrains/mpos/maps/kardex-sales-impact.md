@@ -68,6 +68,30 @@ Exports:
 - Excel and PDF with enriched format
 - Optional chart pack: entradas vs salidas por dia, top productos movidos
 
+## Regression sample for variant fidelity
+
+Use this sample set when checking whether Kardex reconstructs the same variant tree as `reportes/detalle_existencias`:
+- `9253`
+- `9254`
+- `9311`
+- `9345`
+- `9391`
+
+Validation harness:
+- `C:\Users\yejc2\source\repos\MCP\mposbi\scripts\Validate-DetalleExistenciasVsKardex.ps1`
+
+What the harness guards:
+- `detalle_existencias` must keep rows separated by `codigo_producto + unidad_medida`
+- Kardex must not lose `unidad_medida` / `talla` / `color` when a source movement carries talla/color data
+- QueryBuilder result rows can arrive as `stdClass`; common helpers must support that shape or Kardex 500s
+- Filtering by company access should validate permissions without multiplying rows; prefer `EXISTS` over a permissive join when the user has multiple bridge rows
+
+Current diagnostic note from the latest validation run (`20260717-115241`):
+- `9311` and `9345` already match on final quantity.
+- `9253`, `9254`, and `9391` still differ because the comparison is exposing a variant/corte gap, not because the Kardex page stopped rendering.
+- For these codes, the remaining review is to decide whether the missing piece belongs in `detalle_existencias` as `ultimo inventario` or in a source-filter rule for the Kardex view.
+- Keep the validator around as the repeatable proof artifact instead of re-deriving the mismatch manually.
+
 ## Cost Policy Parameterization (Model only)
 Goal:
 - Keep current behavior as default.

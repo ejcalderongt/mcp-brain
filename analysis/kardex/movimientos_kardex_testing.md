@@ -10,6 +10,7 @@ Estandarizar pruebas de diagnostico para el reporte `reportes/movimientos_kardex
 
 ## Script
 - [Validate-MovimientosKardex.ps1](C:/Users/yejc2/source/repos/MCP/mposbi/scripts/Validate-MovimientosKardex.ps1)
+- [Validate-DetalleExistenciasVsKardex.ps1](C:/Users/yejc2/source/repos/MCP/mposbi/scripts/Validate-DetalleExistenciasVsKardex.ps1)
 
 ## Ejecucion rapida
 ```powershell
@@ -43,6 +44,24 @@ Cada `<case>.json` incluye:
 3. `query_pilsener_10_days`
 4. `query_field_token` (`producto:pilsener`)
 
+## Casos recomendados para comparacion con detalle_existencias
+1. `9253`
+2. `9254`
+3. `9311`
+4. `9345`
+5. `9391`
+
+## Comando de ejecucion del comparador
+```powershell
+cd C:\Users\yejc2\source\repos\MCP\mposbi
+powershell -ExecutionPolicy Bypass -File .\scripts\Validate-DetalleExistenciasVsKardex.ps1
+```
+
+## Lectura del resultado
+- `summary.md` resume si cada codigo quedo `OK` o `MISMATCH`.
+- Cada `case-<codigo>.json` conserva el detalle por variante.
+- Si Kardex pierde la variante, el comparador lo marca como gap y ya no hay que inferirlo a mano.
+
 ## Uso para diagnostico
 1. Ejecutar script.
 2. Revisar `summary.md` para detectar casos fallidos o lentos.
@@ -52,3 +71,17 @@ Cada `<case>.json` incluye:
    - `debug.muestra_productos_q`
    - `debug.sql`
 4. Corregir query/filtros y volver a ejecutar para comparar.
+
+## Ultima corrida conocida
+
+Ejecucion de referencia: `20260717-115241`
+
+- `Cases: 5 / Mismatches: 3`
+- `9311` -> OK
+- `9345` -> OK
+- `9253`, `9254`, `9391` -> MISMATCH
+
+Lectura de negocio:
+- el validator ya permite separar “match real” de “gap por variante/corte”.
+- si la siguiente mejora es `detalle_existencias`, el hueco mas visible es la falta de `Ultimo inventario`.
+- si la siguiente mejora es Kardex, el siguiente paso es decidir si la fuente de venta debe seguir siendo unica por empresa o si hace falta un selector de ledger por origen.
