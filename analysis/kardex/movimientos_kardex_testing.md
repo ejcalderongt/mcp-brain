@@ -83,5 +83,6 @@ Ejecucion de referencia: `20260717-115241`
 
 Lectura de negocio:
 - el validator ya permite separar “match real” de “gap por variante/corte”.
-- si la siguiente mejora es `detalle_existencias`, el hueco mas visible es la falta de `Ultimo inventario`.
+- `detalle_existencias` ya debe publicar `inventario_inicial` como `Ultimo inventario` para hacer explicito el corte de arranque.
+- el gap que sigue abierto no es de render sino de reconciliacion fina en algunas variantes sin corte claro.
 - si la siguiente mejora es Kardex, el siguiente paso es decidir si la fuente de venta debe seguir siendo unica por empresa o si hace falta un selector de ledger por origen.
