@@ -42,7 +42,6 @@ Interpretation rule for the validator:
 - A final-quantity match with row-count mismatch usually means one side is collapsing or omitting an opening balance / corte dimension.
 - A variant that appears only with negative saldo in Kardex and not in `detalle_existencias` is usually a coverage gap, not a null-helper bug.
 - For reconciliation work, use the validator as a triage tool first; then decide whether the fix belongs in the ledger, the existence report, or in the new `ultimo inventario` field.
-- In `reportes/detalle_existencias`, surface `inventario_inicial` with the label `Ultimo inventario` so the corte is explicit to the reader.
 
 Suggested sample codes for regression:
 - `9253`
