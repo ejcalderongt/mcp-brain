@@ -19,12 +19,13 @@ Evidence highlights:
 - MCP cost formula in report: `mcp-azure/application/models/reportes/Ventas_gerencial_detalle_model.php:125`
 
 ## Do We Need Updates in Kardex?
-Yes.
+Implemented and validated as of `2026-07-29`.
 
-Reason:
-- `D_MOV/D_MOVD` already contain the transaction stream required for Kardex.
-- A dedicated Kardex report does not exist yet in `application/reportes` by name.
-- Current inventory reports are aggregate/summary oriented, not full chronological ledger with running balance.
+- Route: `reportes/movimientos_kardex`.
+- Closing reference: `reportes/detalle_existencias`.
+- Key: `codigo_producto + unidad_normalizada`.
+- Canonical map:
+  `../../../maps/inventory-reports-kardex-detail-existence.md`.
 
 ## Do We Need Updates in Sales Reports?
 Yes, but as controlled enhancement.
@@ -37,7 +38,7 @@ Impact scope:
 - `Ventas_gerencial_detalle_model`
 - `Margen_*` and other cost-sensitive sales reports
 
-## Kardex Report Design (No-break blueprint)
+## Kardex Report Implementation
 Data base:
 - `d_mov` + `d_movd`
 - optional union with `d_mov_almacen` + `d_movd_almacen`
@@ -122,5 +123,5 @@ Evidence:
 - Role joins: `mcp-azure/application/models/mnt/P_menuopcion_model.php:94`
 
 ## Final Decision
-- Kardex: implement as new report (required).
+- Kardex: implemented, reconciled and validated.
 - Sales reports: update cost strategy carefully (recommended), keeping current logic default until policy toggle is enabled per company.

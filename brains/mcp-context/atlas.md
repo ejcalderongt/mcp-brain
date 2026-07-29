@@ -49,6 +49,15 @@
 - Feature flag: `p_paramext.id = 1001`
 - Stock tree note: Firebase `Stock/{sucursal}` when `p_sucursal.usa_firebase = 1`
 
+## Recent Inventory Reporting Artifact
+- `maps/inventory-reports-kardex-detail-existence.md`
+- Routes: `reportes/movimientos_kardex` and
+  `reportes/detalle_existencias`
+- Rule: one physical closing per product/normalized-unit.
+- Guardrail: maximum 90 inclusive days in Detalle.
+- Company `30`, sucursal `113`: zero numerical differences in the validated
+  full-catalog range.
+
 ## Recent Sales Artifact
 - `maps/factura-mpos-anulacion-flow.md`
 - Source route: `venta/factura_mpos`

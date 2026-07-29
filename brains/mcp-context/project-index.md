@@ -31,6 +31,11 @@
 ## Inventario Variante
 - `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color, bandera `1001`, dry-run reversible y stock tree Firebase/SQL.
 
+## Reportes de Inventario
+- `maps/inventory-reports-kardex-detail-existence.md` -> contrato entre Kardex
+  y Detalle de existencias, saldos, filtros, unidades, CPP y conciliación.
+- `memory/2026-07-29.md` -> cierre operativo y evidencia validada.
+
 ## Ventas mPos
 - `maps/factura-mpos-anulacion-flow.md` -> listado y anulacion centralizada de facturas mPos, con sync opcional por bitacora.
 - `maps/role-permission-trace.md` -> trazabilidad de rol, módulo y visibilidad del menú `venta/factura_mpos`.

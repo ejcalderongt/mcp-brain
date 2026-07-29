@@ -33,6 +33,15 @@ Repositorio dedicado para conservar y evolucionar:
 - Activación por `p_paramext.id = 1001` y fallback legacy `inventario/ajuste?legacy=1`.
 - Mapa operativo: `maps/inventory-adjustment-variant-flow.md`.
 
+## Última actualización reportes de inventario (2026-07-29)
+
+- Kardex reconciliado contra Detalle de existencias por producto/unidad.
+- Existencia resistente a filtros DevExtreme y búsquedas compuestas.
+- Servicios excluidos; inactivos y unidades anómalas trazados aparte.
+- CPP periódico histórico con máximo de 90 días.
+- Empresa 30/sucursal 113 conciliada sin diferencias numéricas.
+- Mapa: `maps/inventory-reports-kardex-detail-existence.md`.
+
 ## Última actualización ventas mPos (2026-06-20)
 - Nueva pantalla `venta/factura_mpos` para listar y anular facturas mPos sin mezclar el flujo BOF actual.
 - La anulación centralizada actualiza `D_FACTURA`, `D_FACTURAD`, `D_FACTURAP` y, si existe, `D_FACTURA_MPOS_ANULACION`.

@@ -85,3 +85,20 @@ Lectura de negocio:
 - el validator ya permite separar “match real” de “gap por variante/corte”.
 - si la siguiente mejora es `detalle_existencias`, el hueco mas visible es la falta de `Ultimo inventario`.
 - si la siguiente mejora es Kardex, el siguiente paso es decidir si la fuente de venta debe seguir siendo unica por empresa o si hace falta un selector de ledger por origen.
+
+## Conciliación integral posterior (2026-07-29)
+
+La implementación final quedó documentada en:
+`brains/mcp-context/maps/inventory-reports-kardex-detail-existence.md`.
+
+Empresa `30`, sucursal `113`, rango `2026-05-31..2026-07-29`:
+
+- Kardex: `5,672` movimientos / `95` llaves.
+- Detalle: `143` llaves.
+- Intersección: `93`.
+- Diferencias numéricas reales: `0`.
+- Total de ambos reportes: `5,386,750.0800`.
+
+Las dos llaves sin referencia fueron excepciones de universo/calidad:
+producto inactivo `67` y movimiento `D12` en `ML` cuando su unidad maestra es
+`UN`.
