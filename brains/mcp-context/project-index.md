@@ -30,6 +30,7 @@
 
 ## Inventario Variante
 - `maps/inventory-adjustment-variant-flow.md` -> ajuste talla/color, bandera `1001`, dry-run reversible y stock tree Firebase/SQL.
+- `memory/2026-10-05.md` -> integridad de producto/precio/stock en BEBE-BOX, recepción anulada y bootstrap seguro de empresas en `mcp_qa`.
 
 ## Reportes de Inventario
 - `maps/inventory-reports-kardex-detail-existence.md` -> contrato entre Kardex
